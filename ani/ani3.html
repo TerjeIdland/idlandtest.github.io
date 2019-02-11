@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+  <head>
+
+      <meta charset="utf-8">
+      <title>Animasjon</title>
+      <script src="js/main3.js" async></script>
+      <style>
+        canvas {
+          opacity: 0.5;
+          filter: alpha(opacity=50); /* For IE8 and earlier */
+          position: absolute;
+          left: 5px;
+          top: 50px;
+        }
+
+        canvas:hover {
+          opacity: 1.0;
+          filter: alpha(opacity=100); /* For IE8 and earlier */
+          position: absolute;
+          left: 5px;
+          top: 50px;
+        }
+        video{
+          position: absolute;
+          left: 5px;
+          top: 50px;
+        }
+        #snap{
+          position: absolute;
+          left: 700px;
+          top: 500px;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="select">
+        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+      </div>
+
+      <video id="video" playsinline autoplay></video>
+      <button id="snap">Stillbilde</button>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+  </body>
+</html>
